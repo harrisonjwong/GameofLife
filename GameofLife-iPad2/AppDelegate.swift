@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  GameofLife-iPad2
 //
-//  Created by Harrison Wong on 12/02/2016.
-//  Copyright © 2016 Harrison Wong. All rights reserved.
+//  Created by Alex Cao & Harrison Wong on 12/02/2016.
+//  Copyright © 2016 Alex Cao & Harrison Wong. All rights reserved.
 //
 
 import UIKit
