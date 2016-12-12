@@ -51,7 +51,7 @@ class DetailViewController: UIViewController {
                 view.colony = colony
                 timerOn = false
                 wrappingSwitch.addTarget(self, action: #selector(DetailViewController.stateChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
-                increment = Double(3 - speedSlider.value)
+                increment = log2(Double(3 - speedSlider.value))
 //                print("ViewController Loaded its view")
                 view.updateGraphic()
 //                print(detailItem.aliveCells)
@@ -66,11 +66,11 @@ class DetailViewController: UIViewController {
             timerOn = false
         } else {
             if !timerOn {
-                increment = Double(3 - speedSlider.value)
+                increment = log2(Double(3 - speedSlider.value))
                 timer = NSTimer.scheduledTimerWithTimeInterval(increment, target: self, selector: #selector(DetailViewController.updateEvolve(_:)), userInfo: nil, repeats: true)
                 timerOn = true
             } else {
-                increment = Double(3 - speedSlider.value)
+                increment = log2(Double(3 - speedSlider.value))
                 timer.invalidate()
                 timer = NSTimer.scheduledTimerWithTimeInterval(increment, target: self, selector: #selector(DetailViewController.updateEvolve(_:)), userInfo: nil, repeats: true)
 //                print("timer on")
