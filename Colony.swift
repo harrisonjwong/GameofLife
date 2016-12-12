@@ -64,12 +64,15 @@ class Colony : CustomStringConvertible {
     func getEvolveNum()-> Int {
         return evolveNum
     }
+    
     func getNumberCells()-> Int {
         return aliveCells.count
     }
+    
     func isCellAlive(c: Cell)-> Bool {
         return aliveCells.contains(c)
     }
+    
     func resetColony() {
         aliveCells.removeAll()
         generationNum = 0

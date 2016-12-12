@@ -45,13 +45,25 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rLI-GN-KmI">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rLI-GN-KmI">
                                         <rect key="frame" x="0.0" y="453" width="560" height="31"/>
                                         <subviews>
-                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" placeholderIntrinsicWidth="38" placeholderIntrinsicHeight="31" text="(-1, -1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="38" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-U2-GUS">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="31"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-zG-bdW">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" placeholderIntrinsicWidth="38" placeholderIntrinsicHeight="31" text="(-1, -1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="38" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-U2-GUS">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrapping" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3a-iu-T1e">
+                                                <rect key="frame" x="374" y="0.0" width="187" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -59,7 +71,7 @@
                                     <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GFV-cn-YJ5">
                                         <rect key="frame" x="0.0" y="489" width="560" height="31"/>
                                         <subviews>
-                                            <slider autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="735" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="2.7999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="s4P-Du-kU1">
+                                            <slider autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="735" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="1.5" maxValue="2.9500000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="s4P-Du-kU1">
                                                 <rect key="frame" x="-2" y="0.0" width="500" height="32"/>
                                                 <connections>
                                                     <action selector="speedChanged:" destination="JEX-9P-axG" eventType="valueChanged" id="JdY-WX-q5F"/>

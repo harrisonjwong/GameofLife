@@ -111,6 +111,20 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        moveColonyAtIndex(sourceIndexPath.row, toIndex: destinationIndexPath.row)
+    }
+    
+    func moveColonyAtIndex(fromIndex: Int, toIndex: Int) {
+        if fromIndex == toIndex {
+            return
+        }
+        
+        let movedColony = objects[fromIndex]
+        objects.removeAtIndex(fromIndex)
+        objects.insert(movedColony, atIndex: toIndex)
+    }
 
 
 }
